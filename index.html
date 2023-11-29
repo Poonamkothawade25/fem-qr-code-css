@@ -11,80 +11,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | QR code component</title>
-  
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html {
-      background-color: hsl(212, 45%, 89%);
-    }
-    body {
-      font-family: 'Outfit', sans-serif;
-      font-size: 0.94rem;
-    }
-    .container {
-      max-width: 18.75rem;
-      background-color: hsl(0, 0%, 100%);
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      padding: 10px;
-      padding-bottom: 2.5rem;
-      border: none;
-      border-radius: 0.94rem;
-    }
-    img {
-      width: 100%;
-      border-radius: 0.94rem;
-      margin: auto;
-      margin-bottom: 1.6rem;
-    }
-    #heading {
-      color: hsl(218, 44%, 22%);
-      font-weight: 700; 
-      text-align: center;
-      margin-bottom: 0.94rem;
-    }
-    .para {
-      color: hsl(220, 15%, 55%);
-      font-weight: 400;
-      text-align: center;
-      padding: 0px 0.6rem;
-    }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-
-    @media screen and (min-width: 375px)
-    {
-      .container {
-        /* position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); */
-        margin: auto;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+ 
 </head>
 <body>
+  <main class="container">
+        <img src="images/image-qr-code.png" alt="QR code">
+        <h2 id="heading">Improve your front-end skills by building projects</h2>
+        <p class="para">  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  </main>
 
-  <div class="container">
-      <img src="images/image-qr-code.png" alt="QR code">
-      <h2 id="heading">Improve your front-end skills by building projects</h2>
-      <p class="para">  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-  </div>
+  <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Poonam Kothawade</a>.
+  </footer>
   
-
-  
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Poonam Kothawade</a>.
-  </div> -->
 </body>
 </html>
