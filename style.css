@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  min-width: 18.75rem;
+  max-width: 18.75rem;
   background-color: hsl(0, 0%, 100%);
   position: absolute;
   top: 50%;
@@ -26,11 +26,24 @@ body {
   border-radius: 0.94rem;
 }
 
+@media all and (max-width: 375px) {
+  .container {
+    min-width: 18.75rem;
+    padding-bottom: 2rem;
+  }
+}
+
 img {
   width: 100%;
   border-radius: 0.94rem;
   margin: auto;
   margin-bottom: 1.6rem;
+}
+
+@media all and (max-width: 375px) {
+  img {
+    margin-bottom: 1rem;
+  }
 }
 
 #heading {
@@ -40,6 +53,13 @@ img {
   margin-bottom: 0.94rem;
 }
 
+@media all and (max-width: 375px) {
+  #heading {
+    font-size: 1.3rem;
+    padding: 0 1rem;
+  }
+}
+
 .para {
   color: hsl(220, 15%, 55%);
   font-weight: 400;
@@ -47,9 +67,16 @@ img {
   padding: 0px 0.6rem;
 }
 
+@media all and (max-width: 375px) {
+  .para {
+    font-size: 0.9rem;
+    padding: 0 1.2rem;
+  }
+}
+
 .attribution { 
   font-size: 11px; 
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
